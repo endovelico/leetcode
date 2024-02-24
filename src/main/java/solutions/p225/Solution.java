@@ -15,7 +15,9 @@ public class Solution {
 
     public void push(int x) {
 
-        //if (straight_queue.)
+        if(straight_queue.isEmpty()) {
+
+        }
 
     }
 
@@ -28,6 +30,10 @@ public class Solution {
     }
 
     public boolean empty() {
+
+    }
+
+    public void migrate() {
 
     }
 }

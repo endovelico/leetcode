@@ -106,7 +106,7 @@ public class Solution {
                 "## \uD83E\uDDEA Code Example (Java)\n" +
                 "\n" +
                 "```java\n" +
-                "class Solution {\n" +
+                "class Trie {\n" +
                 "    public boolean isBalanced(TreeNode root) {\n" +
                 "        return check(root) != -1;\n" +
                 "    }\n" +

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LRUCacheListPlusMap {
+
     private CacheNode head = new CacheNode(0, 0);
     private CacheNode tail = new CacheNode(0, 0);
     private Map<Integer, CacheNode> cache = new HashMap<>();

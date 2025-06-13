@@ -4,20 +4,22 @@ import common.TreeNode;
 
 public class Solution {
 
-    public int maxDepth(TreeNode root) {
-        int current_max_depth = 0;
-        if (root == null) return current_max_depth;
-
-        return depth_first_search(root, current_max_depth);
+    public int minDepth(TreeNode root) {
+        if (root == null) return 0;
+        return depth_first_search(root);
     }
 
-    private int depth_first_search(TreeNode root, int current_max_depth) {
+    private int depth_first_search(TreeNode node) {
+        if (node == null) return Integer.MAX_VALUE;
 
-        if (root == null) return current_max_depth;
+        // If it's a leaf node
+        if (node.left == null && node.right == null) return 1;
 
-        int new_current_max_depth = current_max_depth + 1;
+        int leftDepth = depth_first_search(node.left);
+        int rightDepth = depth_first_search(node.right);
 
-        return Math.max(depth_first_search(root.left, new_current_max_depth), depth_first_search(root.right, new_current_max_depth));
+        return 1 + Math.min(leftDepth, rightDepth);
     }
 }
+
 

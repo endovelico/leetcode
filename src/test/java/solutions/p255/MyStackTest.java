@@ -47,18 +47,24 @@ public class MyStackTest {
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        stack.printQueue();
-
-        stack.pop();         // should be 3
-        stack.top();         // should be 2
-        stack.pop();         // should be 2
         stack.push(4);
+        stack.push(5);
         stack.printQueue();
 
-        stack.top();         // should be 4
-        stack.empty();       // should be false
-        stack.pop();         // should be 4
-        stack.pop();         // should be 1
-        stack.empty();       // should be true
+        stack.pop();
+        stack.top();
+        stack.pop();
+        stack.push(6);
+        stack.push(7);
+        stack.printQueue();
+
+        stack.top();
+        stack.empty();
+        stack.pop();
+        stack.pop();
+        stack.empty();       
+        stack.pop();
+        stack.pop();
+        stack.pop();
     }
 }

@@ -28,5 +28,3 @@ class MyStack {
         return queue.isEmpty();
     }
 }
-
-[1]

@@ -10,6 +10,7 @@ class MyStack {
         queue.offer(x);  // Add to back
 
         int size = queue.size();
+
         // Rotate queue to make x appear at front
         for (int i = 0; i < size - 1; i++) {
             queue.offer(queue.poll());

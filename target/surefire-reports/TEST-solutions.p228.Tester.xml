@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="solutions.p110.Tester" time="0.009" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="solutions.p228.Tester" time="0.024" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -58,10 +58,11 @@
     <property name="maven.repo.local" value="/home/endovelico/.m2/repository"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testBalancedTree" classname="solutions.p110.Tester" time="0.001"/>
-  <testcase name="testUnbalancedTree" classname="solutions.p110.Tester" time="0.001"/>
-  <testcase name="testEmptyTree" classname="solutions.p110.Tester" time="0.001"/>
-  <testcase name="testSingleNodeTree" classname="solutions.p110.Tester" time="0.0"/>
-  <testcase name="testDeepUnbalancedTree" classname="solutions.p110.Tester" time="0.001"/>
-  <testcase name="testSlightlyUnbalancedTree" classname="solutions.p110.Tester" time="0.001"/>
+  <testcase name="negativeNumbers" classname="solutions.p228.Tester" time="0.008"/>
+  <testcase name="largeGapBetweenNumbers" classname="solutions.p228.Tester" time="0.002"/>
+  <testcase name="emptyArray" classname="solutions.p228.Tester" time="0.001"/>
+  <testcase name="noRangesAllSingleNumbers" classname="solutions.p228.Tester" time="0.001"/>
+  <testcase name="singleElement" classname="solutions.p228.Tester" time="0.002"/>
+  <testcase name="oneContinuousRange" classname="solutions.p228.Tester" time="0.001"/>
+  <testcase name="mixedRanges" classname="solutions.p228.Tester" time="0.001"/>
 </testsuite>

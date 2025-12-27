@@ -3,7 +3,6 @@ package solutions.p247;
 import markdown.MarkdownUtils;
 
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.List;
 
 public class Solution {

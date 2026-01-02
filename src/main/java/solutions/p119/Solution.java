@@ -7,13 +7,13 @@ public class Solution {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> row = new ArrayList<>();
 
-        for (int i = 0; i <= rowIndex; i++) {
+        for (int row_index = 0; row_index <= rowIndex; row_index++) {
             // Add a trailing 1
             row.add(1);
 
             // Update from right to left
-            for (int j = i - 1; j > 0; j--) {
-                row.set(j, row.get(j) + row.get(j - 1));
+            for (int column_index = row_index - 1; column_index > 0; column_index--) {
+                row.set(column_index, row.get(column_index) + row.get(column_index - 1));
             }
         }
 

@@ -4,6 +4,6 @@ public class TrieNode {
 
     private static final int NUMBER_OF_LETTERS = 26;
 
-    TrieNode[] children_nodes = new TrieNode[NUMBER_OF_LETTERS];
-    boolean isFinal = false;
+    public TrieNode[] children_nodes = new TrieNode[NUMBER_OF_LETTERS];
+    public boolean is_end_of_word = false;
 }

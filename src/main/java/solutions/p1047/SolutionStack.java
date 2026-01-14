@@ -1,0 +1,25 @@
+package solutions.p1047;
+
+import java.util.Stack;
+
+public class SolutionStack {
+    public String removeDuplicates(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for (char c : s.toCharArray()) {
+            if (!stack.isEmpty() && stack.peek() == c) {
+                stack.pop(); // remove adjacent duplicate
+            } else {
+                stack.push(c); // add character to stack
+            }
+        }
+
+        // Build result from stack
+        StringBuilder result = new StringBuilder();
+        for (char c : stack) {
+            result.append(c);
+        }
+
+        return result.toString();
+    }
+}

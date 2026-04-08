@@ -1,15 +1,22 @@
 package solutions.p219;
 
-public class Solution {
 
-    public boolean containsNearbyDuplicate(int[] numbers_array, int offset) {
+import java.util.HashMap;
+import java.util.Map;
 
-        for (int i = 0; i < numbers_array.length; i++)
-            for (int j = i + 1; j < numbers_array.length; j++) {
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
 
-                if(numbers_array[i] != numbers_array[j]) continue;
-                if( Math.abs(i - j) <= offset || Math.abs(j - i) <= offset) return true;
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
+                int prevIndex = map.get(nums[i]);
+                if (i - prevIndex <= k) {
+                    return true;
+                }
             }
+            map.put(nums[i], i); // update latest index
+        }
 
         return false;
     }

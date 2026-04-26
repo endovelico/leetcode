@@ -6,6 +6,13 @@ import java.util.List;
 
 class Solution {
 
+    // II(0)CO
+    // adicionar imediatamente o valor ao resultado
+    // for
+        // C + I
+    // II(1)CO
+        //C - I
+
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         backtrack(nums, 0, new ArrayList<>(), result);

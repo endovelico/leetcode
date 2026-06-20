@@ -1,23 +1,27 @@
 package solutions.p832;
 
 class Solution {
-
     public int[][] flipAndInvertImage(int[][] image) {
 
-        for (int i = 0; i < image.length; i++) {
+        int n = image.length;
 
-            boolean is_it_odd = image[i].length % 2 == 0 ? true : false;
-            for (int j = 0; j < image[i].length / 2; j++) {
+        for (int i = 0; i < n; i++) {
+            int l = 0, r = n - 1;
 
-                //if theyre different, switch
-                    // if not swap
-                // swit-cup
-                // odd element
+            while (l <= r) {
 
+                // swap + invert in one step
+                int left = image[i][l] ^ 1;
+                int right = image[i][r] ^ 1;
+
+                image[i][l] = right;
+                image[i][r] = left;
+
+                l++;
+                r--;
             }
         }
 
-        return new int[][]{};
+        return image;
     }
-
 }
